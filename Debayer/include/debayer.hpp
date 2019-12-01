@@ -1,13 +1,16 @@
 //  cct.hpp
 
-#ifndef CCT_hpp
-#define CCT_hpp
+#ifndef DBR_hpp
+#define DBR_hpp
 
 #include <stdio.h>
 #include <opencv2/opencv.hpp>
 #include <opencv2/highgui.hpp>
 #include <string>
-float calc_cct(cv::Mat);
-void get_cct(std::string);
-#endif /* CCT_hpp */
+void split(std::string, std::string , std::vector<std::string>&);
+std::string create_filename(std::string, std::string);
+void help(void);
+void bayerit(std::string);
+void debayer(std::string);
+#endif /* DBR_hpp */
 

@@ -33,7 +33,7 @@ string create_filename(string filename, string str)
     return o_filename;
 }
 
-int help()
+void help()
 {
 	printf("\t\tplease check input\n\
 			\t./debayer <bayer/debayer> <filename>\n\
@@ -253,4 +253,3 @@ int main(int argc, char *argv[])
 	else
 		help();
 }
-
